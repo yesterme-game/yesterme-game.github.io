@@ -7,80 +7,10 @@
 <meta name="description" content="YesterMe is a one-handed puzzle game against your own past. Coming soon to Google Play and the App Store.">
 <meta name="color-scheme" content="dark light">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<style>
-  /* Sora Bold, the wordmark's typeface (SIL Open Font License, fonts/OFL.txt), served from this
-     site so that a visit sends nothing to a font host. */
-  @font-face {
-    font-family: "Sora";
-    src: url("fonts/sora-700.ttf") format("truetype");
-    font-weight: 700;
-    font-display: swap;
-  }
-  :root {
-    --bg: #1a1815;
-    --ink: #efe8dc;
-    --muted: #9a9284;
-    --border: #3a352f;
-    --cherry: #f2405f;
-    --disc: #f7f2e8;
-    --primary: #c01c3e;
-    --on-primary: #fff7f2;
-  }
-  @media (prefers-color-scheme: light) {
-    :root {
-      --bg: #efeae2;
-      --ink: #1c1915;
-      --muted: #6e675d;
-      --border: #cfc8bd;
-      --cherry: #a8122f;
-      --disc: #1c1915;
-      --primary: #a8122f;
-      --on-primary: #ffffff;
-    }
-  }
-  * { box-sizing: border-box; }
-  html { -webkit-text-size-adjust: 100%; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--ink);
-    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  }
-  main { max-width: 36rem; margin: 0 auto; padding: 4.5rem 16px 3rem; }
-  .logo { display: flex; align-items: center; gap: 14px; margin: 0 0 1.25rem; }
-  .logo svg { width: 64px; height: 64px; flex: none; }
-  h1 {
-    margin: 0;
-    font: 700 clamp(2.6rem, 11vw, 3.6rem)/1 "Sora", system-ui, sans-serif;
-    letter-spacing: -0.03em;
-  }
-  .yester { color: var(--cherry); }
-  .me { color: var(--ink); }
-  .tagline { margin: 0 0 1rem; font: 700 1.25rem/1.35 "Sora", system-ui, sans-serif; letter-spacing: -0.01em; }
-  p { margin: 0 0 1rem; }
-  .soon {
-    display: inline-block;
-    margin-top: 0.25rem;
-    padding: 0.4rem 0.9rem;
-    border-radius: 999px;
-    background: var(--primary);
-    color: var(--on-primary);
-    font: 700 0.85rem/1.2 "Sora", system-ui, sans-serif;
-  }
-  section { margin-top: 3rem; padding-top: 2.25rem; border-top: 1px solid var(--border); }
-  h2 {
-    margin: 0 0 0.75rem;
-    font: 700 0.8rem/1 "Sora", system-ui, sans-serif;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--muted);
-  }
-  footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.95rem; }
-  a { color: var(--cherry); }
-</style>
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
-<main>
+<main class="home">
   <div class="logo">
     <svg viewBox="0 0 100 100" aria-hidden="true">
       <mask id="cut" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100">
@@ -104,6 +34,8 @@
   </section>
 
   <footer>
+    <p><a href="/privacy/">Privacy Policy</a> · <a href="/terms/">Terms of Use</a></p>
+    <p lang="tr"><a href="/tr/gizlilik/">Gizlilik Politikası</a> · <a href="/tr/kullanim-sartlari/">Kullanım Şartları</a></p>
     <p>Contact / İletişim: <a href="mailto:yesterme.game@gmail.com">yesterme.game@gmail.com</a></p>
     <p>© 2026 YesterMe</p>
   </footer>
