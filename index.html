@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YesterMe</title>
+<meta name="description" content="YesterMe is a one-handed puzzle game against your own past. Coming soon to Google Play and the App Store.">
+<meta name="color-scheme" content="dark light">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 2 30 16 16 30 2 16Z' fill='%23f0b93a'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #1a1815;
+    --ink: #efe8dc;
+    --muted: #9a9284;
+    --border: #6b645a;
+    --accent: #f0b93a;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #efeae2;
+      --ink: #1c1915;
+      --muted: #6e675d;
+      --border: #b3aca1;
+      --accent: #9a6200;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  main {
+    max-width: 34rem;
+    margin: 0 auto;
+    padding: 4rem 16px 3rem;
+  }
+  .mark { display: block; width: 96px; height: 64px; margin-bottom: 1.5rem; }
+  h1 {
+    margin: 0;
+    font-size: clamp(2.5rem, 9vw, 3.5rem);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+  h2 {
+    margin: 0 0 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .tagline { margin: 0.5rem 0 1.25rem; font-size: 1.2rem; color: var(--accent); font-weight: 600; }
+  p { margin: 0 0 1rem; }
+  .soon { color: var(--muted); }
+  section { margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--border); }
+  footer { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.95rem; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <svg class="mark" viewBox="0 0 96 64" aria-hidden="true">
+    <path d="M32 8 56 32 32 56 8 32Z" fill="none" stroke="var(--muted)" stroke-width="3"/>
+    <path d="M64 8 88 32 64 56 40 32Z" fill="var(--accent)"/>
+  </svg>
+  <h1>YesterMe</h1>
+  <p class="tagline">A one-handed puzzle game against your own past.</p>
+  <p>Collect cores. Every core you take turns the path you walked to it into an echo: your past self, walking that path back and forth. Touch your own echo and the game is over.</p>
+  <p class="soon">Coming soon to Google Play and the App Store.</p>
+
+  <section lang="tr">
+    <h2>Türkçe</h2>
+    <p class="tagline">Kendi geçmişine karşı, tek elle oynanan bir bulmaca oyunu.</p>
+    <p>Çekirdekleri topla. Aldığın her çekirdek, ona giderken yürüdüğün yolu bir yankıya çevirir: geçmişteki halin o yolu gidip gelir. Kendi yankına dokunursan oyun biter.</p>
+    <p class="soon">Yakında Google Play ve App Store'da.</p>
+  </section>
+
+  <footer>
+    <p>Contact / İletişim: <a href="mailto:yesterme.game@gmail.com">yesterme.game@gmail.com</a></p>
+    <p>© 2026 YesterMe</p>
+  </footer>
+</main>
+</body>
+</html>
