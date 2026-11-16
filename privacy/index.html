@@ -56,10 +56,10 @@
   <p>The game shows a banner at the bottom of the game screen, a short ad between some games, and, only if you choose it, a video ad that rewinds your last five moves. The ads come from Google AdMob, provided by Google LLC and, for people in the European Economic Area (EEA), the United Kingdom and Switzerland, by Google Ireland Limited.</p>
   <p>To request and show ads, the Google software built into the game collects:</p>
   <ul>
-    <li>your phone's advertising ID and other device identifiers (on iPhone, the advertising ID only if you allow tracking);</li>
+    <li>your phone's advertising ID, the app set ID and other device identifiers, and, where applicable, identifiers of accounts signed in on the phone (on iPhone, the advertising ID only if you allow tracking);</li>
     <li>your IP address, which is used to estimate your approximate location, such as your country or city;</li>
     <li>information about your phone and the app, such as the model, operating system, language and app version;</li>
-    <li>how you interact with ads, for example views, taps and whether a video was watched to the end, and diagnostic data;</li>
+    <li>how you use the app and its ads, for example app launches, taps, ad views and whether a video was watched to the end, and diagnostic data such as how fast the app starts and how much energy it uses;</li>
     <li>your consent choices.</li>
   </ul>
   <p>Google uses this data to show and measure ads, to limit how often you see the same ad, to prevent fraud and abuse, and, only where you allow it, to personalise ads. Google uses this data as an independent controller, under its own privacy policy: see <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. Google may work with other advertising companies; where the consent form is shown, it lists them.</p>
@@ -76,8 +76,8 @@
   <p>We use Google Firebase, provided by Google, to understand how the game is played and to fix problems:</p>
   <ul>
     <li><strong>Google Analytics for Firebase</strong> records events in the game: the first launch, tutorial steps, the start and end of each game (level, score, moves, how it ended and how long it took), ad offers and whether they were watched, taps on "Invite", and purchase attempts and purchases (product and price). With them it collects a random ID for your copy of the app, your phone model, operating system, app version and language, and your approximate location (country or region) estimated from your IP address. We have turned off the collection of your advertising ID in Analytics.</li>
-    <li><strong>Firebase Crashlytics</strong> sends a crash report when the app crashes: what the app was doing, the phone model and operating system, and a random installation ID.</li>
-    <li><strong>Firebase Remote Config</strong> lets us change some settings of the game without an update, such as how often short ads appear. For this, the app sends a random installation ID, your country, language and time zone, and the versions of the app and the operating system.</li>
+    <li><strong>Firebase Crashlytics</strong> sends a crash report when the app crashes: what the app was doing, the phone model and operating system, and a random installation ID. With it, Firebase also records basic session information (when you open the app and for how long you use it, and the phone model) to measure how stable the app is.</li>
+    <li><strong>Firebase Remote Config</strong> lets us change some settings of the game without an update, such as how often short ads appear. For this, the app sends a random installation ID, your country, language and time zone, the versions of the app and the operating system, and when the app was first opened.</li>
   </ul>
   <p>These IDs are random. They are not your name, your phone number or an account, and we don't try to find out who you are from them. We use this data only to improve the game: to balance its difficulty, to set how often ads appear, to see which features are used and to fix crashes. Google processes it on our behalf, as our service provider.</p>
   <p>In the EEA, the United Kingdom and Switzerland, analytics and crash reports use their random IDs only if you agree in the consent form. You can change your mind in Settings → Privacy Choices.</p>
@@ -140,7 +140,7 @@
     <li>ask for compensation if unlawful use of your data causes you damage;</li>
     <li>complain to a data protection authority: in Türkiye the <a href="https://www.kvkk.gov.tr/">Personal Data Protection Authority</a>, in the EEA <a href="https://www.edpb.europa.eu/about-edpb/about-edpb/members_en">the authority of your country</a>, in the United Kingdom the <a href="https://ico.org.uk/make-a-complaint/">Information Commissioner's Office</a>.</li>
   </ul>
-  <p>The quickest way is in the app: Settings → Delete My Data erases what the game stores on your phone and resets the random IDs used by analytics, and Settings → Privacy Choices changes your consent. For anything else, write to <a href="mailto:yesterme.game@gmail.com">yesterme.game@gmail.com</a>. Because there are no accounts, we may not be able to find data about you unless you tell us more, such as your phone model and when you played. We reply within 30 days, free of charge.</p>
+  <p>The quickest way is in the app: Settings → Delete My Data erases what the game stores on your phone and resets the random IDs used by analytics, and Settings → Privacy Choices changes your consent. Data already sent is then no longer linked to your new IDs and is deleted after the periods in section 12; ad data is held by Google under its own policy. For anything else, write to <a href="mailto:yesterme.game@gmail.com">yesterme.game@gmail.com</a>. Because there are no accounts, we may not be able to find data about you unless you tell us more, such as your phone model and when you played. We reply within 30 days, free of charge.</p>
 
   <h2 id="children">14. Children</h2>
   <p>YesterMe is made for adults and is not directed at children. We do not knowingly collect personal data from children. If you think a child has sent us personal data, for example by email, write to us and we will delete it.</p>
